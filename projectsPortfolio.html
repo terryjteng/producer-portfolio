@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Terry Teng</title>
+    <link rel="stylesheet" href="projectsPortfolio.css" />
+  </head>
+  <body>
+    <div class="ps1-overlay"></div>
+
+    <nav class="navbar">
+      <a href="producerPortfolioHome.html">Home</a>
+      <a href="projectsPortfolio.html" class="active">Projects</a>
+      <a href="resumePortfolio.html">Resume</a>
+      <a href="aboutPortfolio.html">About</a>
+      <a href="contactPortfolio.html">Contact</a>
+    </nav>
+
+    <header>
+      <h1>PROJECTS</h1>
+      <p class="subtitle">Select a file to load...</p>
+    </header>
+
+    <main class="project-grid">
+      <div
+        class="project-card"
+        data-title="Riot Games"
+        data-description="Technical Producer/Product Owner"
+        data-bgimage="Riot_Games_logo_icon.webp"
+      >
+        <h2>Riot Games</h2>
+        <p class="job-title">Technical Producer/Product Owner</p>
+        <p>Click to learn more</p>
+      </div>
+      <div
+        class="project-card"
+        data-title="Xsolla Backend"
+        data-description="Head of Production"
+        data-bgimage="Xsolla_New_Logo.svg.png"
+      >
+        <h2>Xsolla Backend</h2>
+        <p class="job-title">Head of Production</p>
+        <p>Click to learn more</p>
+      </div>
+    </main>
+
+    <a href="sideScrollerPortfolio.html" class="dev-card dev-card-link">
+      <h2>2D Side-Scroller</h2>
+      <p class="job-title">Solo Developer</p>
+      <p>Click to explore this game project</p>
+    </a>
+    
+
+
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content" id="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p class="job-title" id="modal-job-title"></p>
+        <div id="modal-description" class="modal-description"></div>
+      </div>
+    </div>
+
+    <!-- Riot Games modal -->
+
+    <template id="project-details">
+      <section data-project="Riot Games">
+        <h3 class="title-one">External Development</h3>
+        <div class="modal-row">
+          <div class="modal-text">
+            <p>
+              At Riot Games, I led the implementation of a vendor management and
+              catalog system on the External Development team using Airtable
+              that supported over $100M in development work and facilitated more
+              than 500 vendor engagements. By dissecting existing workflows,
+              introducing automation, and conducting in-depth research
+              initiatives, I was able to identify and eliminate key bottlenecks,
+              communication gaps, and approval delays across production
+              pipelines. This effort significantly improved transparency,
+              reduced operational friction, and empowered stakeholders with
+              real-time visibility into vendor status and
+              deliverables—ultimately streamlining Riot’s external partner
+              ecosystem for game development.
+            </p>
+          </div>
+          <img src="airtable.png" alt="AirTable" class="modal-img right" />
+        </div>
+
+        <h3 class="title-two">Product Solutions</h3>
+        <div class="modal-row">
+          <img src="riot_skins.png" alt="RiotSkins" class="modal-img left" />
+          <div class="modal-text">
+            <p>
+              After my time with the External Development team, I transitioned
+              onto the Product Solutions team to help drive the success of some
+              of the studio’s most profitable game features by leveraging my
+              background in production and workflow optimization. I collaborated
+              closely with product managers, engineers, and analysts to pitch
+              scalable solutions that addressed developer pain points and
+              aligned with long-term strategic goals. My role focused on
+              identifying operational inefficiencies, proposing feature
+              enhancements, and connecting team needs with practical,
+              data-informed improvements—ensuring that our solutions not only
+              improved internal workflows but directly supported
+              revenue-generating initiatives across Riot’s game portfolio.
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+
+    <!-- Xsolla Backend modal -->
+
+    <template id="project-details-xsolla">
+        <section data-project="Xsolla Backend">
+          <h3>Backend Team</h3>
+          <div class="modal-row">
+            <div class="modal-text">
+              <p>As Head of Production for the backend team at Xsolla, I led a comprehensive overhaul of the team's operational structure, managing a global team of backend game engineers responsible for internal product tools and external developer services. I introduced Agile practices, established clear sprint cadences, and drove the adoption of tools and workflows that increased team productivity by 50%. I developed strategic roadmaps, aligned technical initiatives with stakeholder objectives, and created scalable processes that brought visibility and structure to product delivery. My leadership ensured transparency and accountability across departments while empowering engineers with repeatable frameworks and performance tracking tools. This transformation not only improved execution across backend initiatives but also established a foundation for sustainable growth across a distributed engineering organization..</p>
+            </div>
+            <img src="BackEndEng.png" alt="BackendEng" class="modal-img right" />
+          </div>
+      
+          <h3>Arcane Showdown</h3>
+          <div class="modal-row">
+            <img src="ArcaneShowdown.jpg" alt="ArcaneShowdown" class="modal-img left" />
+            <div class="modal-text">
+              <p>I spearheaded the planning and revival of Arcane Showdown in partnership with Big Huge Games, taking the lead as the primary point of contact for all production efforts. I collaborated closely with stakeholders across product, engineering, and design teams to dissect the pitfalls of the game’s previous launch and reimagine its development trajectory. By aligning Xsolla’s backend engineering capabilities with Big Huge’s creative and gameplay needs, I implemented strategic development workflows that addressed technical bottlenecks, improved cross-team communication, and redefined milestone planning. My efforts not only reestablished production momentum but also created a sustainable development framework that positioned the game for a successful re-entry into the market.</p>
+            </div>
+          </div>
+        </section>
+      </template>
+
+   
+    <script src="projectsPortfolio.js"></script>
+  </body>
+</html>

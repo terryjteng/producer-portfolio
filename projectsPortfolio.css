@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 18px #ff00cc;
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 28px #ff66ff;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 18px #ff00cc;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 18px #ff00cc;
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 28px #ff66ff;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 18px #ff00cc;
+  }
+}
+
+body {
+  background-image: url("CTWallpaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+  font-family: "Press Start 2P", monospace;
+  color: #fff;
+  image-rendering: pixelated;
+}
+.ps1-overlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 3px,
+    rgba(255, 255, 255, 0.02) 4px
+  );
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #33ffcc;
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.navbar a.active {
+  color: #33ffcc;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  border-bottom: 2px solid #666;
+}
+
+header h1 {
+  font-size: 6rem;
+  color: #d73232;
+  text-shadow: 5px 5px #000;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 180px;
+  background-color: rgba(50, 50, 50, 0.85);
+  border: 2px solid #25dffc;
+  border-radius: 10px;
+  box-shadow: 4px 4px #000;
+  margin: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px #33ffcc;
+  cursor: pointer;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #7d007d;
+  margin-bottom: 1rem;
+}
+
+.project-card .job-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #33ffcc;
+  margin-bottom: 1rem;
+}
+
+.project-card p:last-of-type {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+#modal-content {
+  width: 70vw;
+  max-width: 90vw;
+  text-align: center;
+  background-size: 33%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: rgba(0, 0, 0, 0.886);
+  background-blend-mode: overlay;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 2rem;
+  border: 2px solid #33ffcc;
+  width: 90%;
+  max-width: 1000px;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  position: relative;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 1s ease, opacity 0.4s ease;
+}
+
+.modal-content.expand {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-text {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+#modal-title {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.modal-img {
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #33ffcc;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #33ffcc;
+}
+
+.modal-img.right {
+  order: 2;
+}
+
+.modal-img.left {
+  order: 1;
+}
+
+.modal-content h2 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.modal-content h3 {
+  color: #4400ff;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.modal .job-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #66ffcc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.25rem;
+  color: #ff6666;
+  cursor: pointer;
+}
+
+/* Highlighted 2D Side-Scroller Card */
+.dev-card {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: rgba(50, 50, 50, 0.85);
+  border: 3px solid #ff00cc;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #ff00cc;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+.dev-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dev-card-link:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+
+.dev-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px #33ffcc;
+  cursor: pointer;
+}
+
+.dev-card h2 {
+  font-size: 1.5rem;
+  color: #ff66ff;
+  margin-bottom: 1rem;
+}
+
+.dev-card .job-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #66ffcc;
+  margin-bottom: 1rem;
+}
+
+.dev-card p:last-of-type {
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.dev-card.highlighted {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}

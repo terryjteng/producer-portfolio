@@ -1,0 +1,188 @@
+/* === Layout === */
+body.resume-page {
+    background-image: url('FOBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e0e0e0;
+  }
+  
+  /* === Navigation === */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgba(10, 10, 10, 0.85);
+    border-bottom: 2px solid #33ffcc;
+    box-shadow: 0 4px 12px rgba(51, 255, 204, 0.1);
+    backdrop-filter: blur(4px);
+  }
+  
+  .navbar a {
+    color: #b0fefe;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #33ffcc;
+    color: #000;
+    box-shadow: 0 0 8px #33ffcc;
+  }
+  
+  .navbar a.active {
+    background-color: #33ffcc;
+    color: #000;
+  }
+  
+  /* === Header === */
+  .resume-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #33ffcc;
+    margin-bottom: 2rem;
+  }
+  
+  .header-glow h1 {
+    font-size: 3rem;
+    color: #33ffcc;
+    animation: glowPulse 2.5s infinite ease-in-out;
+    margin-bottom: 0.5rem;
+  }
+  
+  @keyframes glowPulse {
+    0% {
+      text-shadow: 0 0 10px #33ffcc, 0 0 20px #33ffcc, 0 0 30px #00ffff;
+    }
+    50% {
+      text-shadow: 0 0 20px #33ffcc, 0 0 35px #00ffff, 0 0 45px #00ccff;
+    }
+    100% {
+      text-shadow: 0 0 10px #33ffcc, 0 0 20px #33ffcc, 0 0 30px #00ffff;
+    }
+  }
+  
+  /* === Subtitle + Underline === */
+  .subtitle {
+    font-size: 1.15rem;
+    color: #b0ffee;
+    letter-spacing: 0.75px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(51, 255, 204, 0.4), 0 0 16px rgba(51, 255, 204, 0.2);
+  }
+  
+  .subtitle-underline {
+    width: 180px;
+    height: 3px;
+    margin: 0.75rem auto;
+    background: linear-gradient(90deg, #33ffcc, #00ccff, #33ffcc);
+    background-size: 300% 100%;
+    border-radius: 2px;
+    animation: pulseLine 3s infinite linear;
+    box-shadow: 0 0 10px #33ffcc;
+  }
+  
+  @keyframes pulseLine {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* === Resume Body === */
+  .resume-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  .resume-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .link-card {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #33ffcc;
+    font-weight: bold;
+    border: 2px solid #33ffcc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .link-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #33ffcc;
+  }
+  
+  .resume-content {
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid #33ffcc;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(51, 255, 204, 0.25);
+    padding: 2rem;
+    color: #e0e0e0;
+    backdrop-filter: blur(3px);
+  }
+  
+  /* === Resume Details === */
+  .resume-details h2 {
+    font-size: 1.6rem;
+    color: #33ffcc;
+    border-bottom: 1px solid #33ffcc;
+    padding-bottom: 0.25rem;
+    margin-top: 2rem;
+  }
+  
+  .resume-details h3 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-top: 1.5rem;
+  }
+  
+  .resume-details p,
+  .resume-details li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .resume-details ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    list-style-type: square;
+    color: #b0ffef;
+  }
+
+  .skills-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skills-grid ul {
+    flex: 1 1 45%;
+    list-style-type: square;
+    color: #b0ffef;
+    padding-left: 1.5rem;
+  }
+  
+  
