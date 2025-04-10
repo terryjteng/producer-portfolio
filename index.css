@@ -236,7 +236,7 @@ header {
 .cyber-arm-thumbs {
   position: absolute;
   right: -140px;           
-  top: 400px;             
+  top: 500px;             
   width: 300px;
   transform: rotate(-15deg) scaleX(-1); 
   z-index: 1;             
