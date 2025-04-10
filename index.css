@@ -224,13 +224,13 @@ header {
 
 .cyber-arm-reach {
   position: absolute;
-  left: 1px;
+  left: 10000000px;
   top: 600px;   
   width: 500px;
   transform: rotate(10deg);
   pointer-events: none;
   opacity: 0.8;
-  z-index: -10;
+  z-index: 0;
 }
 
 .cyber-arm-thumbs {
