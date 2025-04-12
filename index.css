@@ -41,8 +41,9 @@ header {
   padding: 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  border-bottom: 4px solid #ff0066;
+  /* border-bottom: 4px solid #ff0066; */
   box-shadow: 0 0 20px #33ffcc;
+  margin-bottom: 4rem;
 }
 
 .banner-section img {
@@ -68,7 +69,7 @@ header {
   border: 4px solid #ff0066;
   background-color: rgba(20, 20, 20, 0.8);
   box-shadow: 0 0 15px #33ffcc;
-  padding: 2rem;
+  padding: 2rem 2rem;
   max-width: 700px;
   margin: 2rem auto;
   border-radius: 16px;
@@ -221,26 +222,4 @@ header {
   box-shadow: 0 0 40px #00ffe7;
 }
 
-
-.cyber-arm-reach {
-  position: absolute;
-  left: 1px;
-  top: 600px;   
-  width: 500px;
-  transform: rotate(10deg);
-  pointer-events: none;
-  opacity: 0.8;
-  z-index: 0;
-}
-
-.cyber-arm-thumbs {
-  position: absolute;
-  right: -140px;           
-  top: 500px;             
-  width: 300px;
-  transform: rotate(-15deg) scaleX(-1); 
-  z-index: 1;             
-  opacity: 0.85;
-  pointer-events: none;
-}
 
