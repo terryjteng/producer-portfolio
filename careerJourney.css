@@ -1,0 +1,89 @@
+.monitor-frame {
+  background: #222;
+  border: 8px solid #00ff00;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 20px #00ff00, inset 0 0 10px #003300;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  position: relative;
+}
+
+.monitor-screen {
+  background: radial-gradient(ellipse at center, #000 0%, #0a0a0a 100%);
+  border: 4px solid #00ff00;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: inset 0 0 25px #00ff00;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 4px #00ff00;
+}
+
+.career-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 2rem; /* Space between text and button group */
+}
+
+.career-options button {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 0 10px #00ff00;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+.career-options button:hover {
+  background-color: #003300;
+  color: #00ffcc;
+  box-shadow: 0 0 12px #00ffaa;
+  border-color: #00ffaa;
+}
+
+.career-options button::before {
+  content: '> ';
+  position: absolute;
+  left: 10px;
+  color: #00ff00;
+  pointer-events: none;
+}
+
+.career-options button span {
+  padding-left: 1.2rem;
+  display: inline-block;
+}
+
+/* Static flicker overlay */
+#static-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(transparent 0px, #00ff00 1px, transparent 2px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  animation: none;
+}
+
+/* Flicker animation keyframes */
+@keyframes screenFlicker {
+  0%   { opacity: 0; }
+  20%  { opacity: 0.3; }
+  50%  { opacity: 0.6; }
+  80%  { opacity: 0.3; }
+  100% { opacity: 0; }
+}
