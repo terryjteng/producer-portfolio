@@ -1,140 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2D Side Scroller | Portfolio</title>
-    <link rel="stylesheet" href="sideScrollerPortfolio.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPV032LNEE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>2D Side Scroller</title>
+    <link rel="stylesheet" href="sideScroller.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
 
-  gtag('config', 'G-WPV032LNEE');
-</script>
-  </head>
-  <body class="side-scroller-theme">
+<body>
+
     <nav class="navbar">
-      <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
       <a href="projectsPortfolio.html" class="active sub-nav">Projects ▸ Side-Scroller</a>
       <a href="resumePortfolio.html">Resume</a>
       <a href="aboutPortfolio.html">About</a>
       <a href="contactPortfolio.html">Contact</a>
     </nav>
 
-    <div class="headline">
-      <h1>2D Side-Scroller Project</h1>
+    <section class="game-banner">
+        <div class="game-banner-content">
+            <div class="game-info">
+                <h1 class="game-title">Fracture Core</h1>
+                <p>*Game Title in Progress</p>
+                <h2 class="game-tagline">His heart was shattered. His body rebuilt. Broken to destroy.</h2>
+                <p class="game-description">
+                    In a future ruled by machines, one boy risks everything to find the only family he has left.
+
+                    As Ari pushes deeper into the neon ruins, every robotic enemy defeated unlocks new power — but at
+                    the cost of his humanity.
+
+                    Save her... before there’s nothing left of him to come home.
+                </p>
+                <a href="#concept-art" class="banner-button">Find out more</a>
+            </div>
+            <div class="game-art">
+                <img src="Main_Character.jpeg" alt="Ari Character" />
+            </div>
+        </div>
+    </section>
+
+    <section class="media-gallery">
+        <div class="carousel">
+            <img src="Main building.webp" alt="Screenshot 1" />
+            <img src="Grunt 1 - skeleton v1.png" alt="Screenshot 2" />
+            <img src="Above Ground.webp" alt="Screenshot 3" />
+        </div>
+    </section>
+
+    <div class="game-info-container">
+        <section class="about-game">
+            <h2>About the Game</h2>
+            <p>
+                Explore a haunting, side-scrolling dystopia as Ari — a lone survivor on a mission to find his missing
+                sister.
+
+                Fight your way through robotic threats, uncover hidden tech, and evolve with modular upgrades that
+                transform your playstyle — and your body.
+
+                Fractured Core is a brutal, heartfelt journey through loss, machine decay, and the cost of becoming what
+                you fight.
+
+
+            </p>
+        </section>
+
+        <section class="game-details">
+            <h2>Game Details</h2>
+            <ul>
+                <li><strong>Genre:</strong> Action / 2D SideScroller</li>
+                <li><strong>Release:</strong> TBD</li>
+                <li><strong>Platform:</strong> PC / Console</li>
+                <li><strong>Developer:</strong> Terry Teng</li>
+            </ul>
+        </section>
     </div>
 
-    <div class="game-description">
-      <h2>The Game / Side Quest</h2>
-      <p>
-        Without giving too much away, I'm currently developing a 2D Side-Scroller
-        game myself. The game will be a mix of elements from some of my favorite 2D side-scroller games
-        in a cyberpunk setting. It will contain parts of Mega Man X, Super Metroid Prime and Hollow Knight all in a futuristic setting.
-      </p>
-      <p>
-        Currently I have: concept art, storyline and most of the C# scripts
-        setup, but the game is still a WIP. At this moment I'm mostly looking for help
-        with sprite sheets and level design. Would be great to have a team of artists and level designers to help me get the game to the next level.
-      </p>
-    </div>
-
-    <section class="game-dev-lifecycle">
-        <h2>Game Development Lifecycle</h2>
-        <p data-tooltip="Have: An idea of full game play and storyline">1 - Idea & Story</p>
-        <p data-tooltip="Have: Concept art for characters. Need: help with Level Design">2 - Conceptualize & Design</p>
-        <p data-tooltip="Have: Platform that is currently built on - Unity ">3 - Technical Analysis</p>
-        <p data-tooltip="Currently in this stage - Development">4 - Development</p>
-        <p data-tooltip="Have not reached yet">5 - Testing</p>
-        <p data-tooltip="Have not reached yet">6 - Deployment</p>
+    <section class="game-progress">
+        <h2>Game Development Progress</h2>
+        <div class="progress-columns">
+          <div class="progress-box completed">
+            <h3>✅ Completed</h3>
+            <ul>
+              <li>Story</li>
+              <li>Concept</li>
+              <li>Skill Tree</li>
+              <li>Concept Art</li>
+            </ul>
+          </div>
+          <div class="progress-box needed">
+            <h3>🛠️ In Progress</h3>
+            <ul>
+              <li>Sprite Sheets / Artwork</li>
+              <li>Level Designs</li>
+            </ul>
+          </div>
+        </div>
       </section>
-<div class="bottom-button-row">
-<button class="concept-trigger" onclick="document.querySelector('.concept-modal').classList.add('active')">View Concept Art</button>
-  
-<div class="concept-modal">
-  <div class="carousel-wrapper">
-    <button class="concept-close" onclick="document.querySelector('.concept-modal').classList.remove('active')">✖</button>
-
-    <div class="carousel-track">
-        <div class="carousel-slide">
-          <button class="modal-trigger" data-modal="modal-main-character">Main Character</button>
-        </div>
-        <div class="carousel-slide">
-          <button class="modal-trigger" data-modal="modal-main-villain">Main Villain</button>
-        </div>
-        <div class="carousel-slide">
-          <button class="modal-trigger" data-modal="modal-grunt-1">Grunt 1</button>
-        </div>
-      </div>
-
-     
       
-      <!-- Modal 1 -->
-<div id="modal-main-character" class="concept-detail-modal">
-    <div class="modal-content">
-      <button class="close-modal">✖</button>
-      <h2>Main Character</h2>
-      <img src= "Concept_art/Main_Character_1.jpeg" alt="Main Character">
-      <p>The main character will start the game looking similar to this but will progress throughout the game.</p>
-    </div>
-  </div>
-  
-  <!-- Modal 2 -->
-  <div id="modal-main-villain" class="concept-detail-modal">
-    <div class="modal-content">
-      <button class="close-modal">✖</button>
-      <h2>Main Villain</h2>
-      <img src="Concept_art/Main_Villain_v1.png" alt="Main Villain">
-      <p>Just part of the concept art for the main villain. He will look as though a human has replace all of his flesh with mechanical parts.</p>
-    </div>
-  </div>
-  
-  <!-- Modal 3 -->
-  <div id="modal-grunt-1" class="concept-detail-modal">
-    <div class="modal-content">
-      <button class="close-modal">✖</button>
-      <h2>Grunt 1</h2>
-      <img src="Concept_art/Grunt_1.png" alt="Grunt Enemy">
-      <p>The first enemy type players encounter — a disposable cyber grunt.</p>
-    </div>
-  </div>
-  
 
-  </div>
-</div>
+    <script src="sideScroller.js"></script>
+</body>
 
-
-  
-  <!-- Level Design Modal Trigger -->
-  <button class="concept-trigger" onclick="document.getElementById('levelDesignModal').classList.add('active')">
-    View Level Design Ideas
-  </button>
-
-<!-- Level Design Modal Card -->
-  <div id="levelDesignModal" class="concept-detail-modal">
-      <div class="modal-content">
-        <button class="close-modal" onclick="document.getElementById('levelDesignModal').classList.remove('active')">✖</button>
-        <h2>Level Design Ideas</h2>
-        <img src="Concept_art/MMXLevel.png" alt="Mega Man X Level">
-        <img src="Concept_art/MetroidLevel.png" alt="Super Metroid Prime Level Design">
-        <img src="Concept_art/HKLevel.png" alt="Hollow Night Level Design">
-        <p>The level designs would be a mix between Mega Man X, Super Metroid Prime, and Hollow Knight</p>
-      </div>
-  
-    </div>
-
-    <script src="sideScrollerPortfolio.js"></script>
-    <script>
-        function scrollCarousel(direction) {
-          const carousel = document.querySelector('.concept-carousel');
-          const slideWidth = carousel.querySelector('.concept-slide').offsetWidth + 32; // add gap
-          carousel.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
-        }
-      </script>
-      
-  </body>
 </html>
