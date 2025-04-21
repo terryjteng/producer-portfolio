@@ -63,8 +63,6 @@ header {
   image-rendering: pixelated;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
 .summary-section {
   max-width: 750px;
   margin: 2rem auto;
