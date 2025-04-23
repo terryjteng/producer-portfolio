@@ -102,7 +102,6 @@ header {
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 .title-text {
   font-family: 'Press Start 2P', monospace;
   font-size: 1.25rem;
@@ -115,9 +114,31 @@ header {
 
 =======
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-=======
->>>>>>> 57dbe72 (summary update)
 
+.summary-section {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 20px #33ffcc, inset 0 0 10px #ff0066;
+  border-radius: 20px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.summary-section h2 {
+  font-size: 1.25rem;
+  color: #00ffe7;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 1rem;
+}
+
+.summary-section p {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-shadow: 1px 1px #000;
+}
 
 
 >>>>>>> 841a2ca (Professional summary)
@@ -286,7 +307,6 @@ header::after {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 .summary-section {
-<<<<<<< HEAD
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
   line-height: 1.6;
@@ -700,28 +720,4 @@ header::after {
   color: #030303;
   font-family: 'Press Start 2P', monospace;
   font-size: 0.75rem;
-=======
-  max-width: 750px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 20px #33ffcc, inset 0 0 10px #ff0066;
-  border-radius: 20px;
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-}
-
-.summary-section h2 {
-  font-size: 1.25rem;
-  color: #00ffe7;
-  text-shadow: 2px 2px #000;
-  margin-bottom: 1rem;
-}
-
-.summary-section p {
-  font-size: 0.7rem;
-  line-height: 1.8;
-  color: #ffffff;
-  text-shadow: 1px 1px #000;
->>>>>>> 57dbe72 (summary update)
 }
