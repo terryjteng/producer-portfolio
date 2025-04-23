@@ -63,30 +63,8 @@ header {
   image-rendering: pixelated;
 }
 
-.summary-section {
-  max-width: 750px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 0 20px #33ffcc, inset 0 0 10px #ff0066;
-  border-radius: 20px;
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-}
 
-.summary-section h2 {
-  font-size: 1.25rem;
-  color: #00ffe7;
-  text-shadow: 2px 2px #000;
-  margin-bottom: 1rem;
-}
 
-.summary-section p {
-  font-size: 0.7rem;
-  line-height: 1.8;
-  color: #ffffff;
-  text-shadow: 1px 1px #000;
-}
 
 /* Link Cards */
 
@@ -247,4 +225,29 @@ header {
   box-shadow: 0 0 40px #00ffe7;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
+.summary-section {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 20px #33ffcc, inset 0 0 10px #ff0066;
+  border-radius: 20px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.summary-section h2 {
+  font-size: 1.25rem;
+  color: #00ffe7;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 1rem;
+}
+
+.summary-section p {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-shadow: 1px 1px #000;
+}
