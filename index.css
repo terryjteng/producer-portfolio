@@ -615,7 +615,6 @@ header::after {
 
 /* Contact Section */
 .contact-banner {
-  background: url("GTABackground.webp") no-repeat center center / cover;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
