@@ -640,6 +640,12 @@ header::after {
   margin-bottom: 2rem;
 }
 
+.contact-box h3 {
+  color: #4c8dfc;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .contact-box p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
